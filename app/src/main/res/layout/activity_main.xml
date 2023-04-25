@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_tertiary80"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Witaj w grze Wisielec!"
+        android:textStyle="italic"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/difficultyTextView" />
+
+    <TextView
+        android:id="@+id/difficultyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_difficulty_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView"
+        app:layout_constraintBottom_toTopOf="@+id/easyButton" />
+
+
+    <Button
+        android:id="@+id/easyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FF99"
+        android:text="Łatwy"
+        android:textColor="@color/my_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difficultyTextView"
+        app:layout_constraintBottom_toTopOf="@+id/mediumButton" />
+
+    <Button
+        android:id="@+id/mediumButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFF90"
+        android:text="Średni"
+        android:textColor="@color/my_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/easyButton"
+        app:layout_constraintBottom_toTopOf="@+id/hardButton" />
+
+    <Button
+        android:id="@+id/hardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF5000"
+        android:textColor="@color/my_grey"
+        android:text="Trudny"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mediumButton"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/easyDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 - 10 liter"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/easyButton"
+        app:layout_constraintTop_toTopOf="@+id/easyButton"
+        app:layout_constraintBottom_toBottomOf="@+id/easyButton" />
+
+    <TextView
+        android:id="@+id/mediumDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11 - 16 liter"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mediumButton"
+        app:layout_constraintTop_toTopOf="@+id/mediumButton"
+        app:layout_constraintBottom_toBottomOf="@+id/mediumButton" />
+
+    <TextView
+        android:id="@+id/hardDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17 - 25 liter"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hardButton"
+        app:layout_constraintTop_toTopOf="@+id/hardButton"
+        app:layout_constraintBottom_toBottomOf="@+id/hardButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

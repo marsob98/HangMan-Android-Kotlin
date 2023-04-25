@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WisielecKotlin</string>
+    <string name="choose_difficulty_text"><u>Wybierz poziom trudności:</u></string>
+
+</resources>
